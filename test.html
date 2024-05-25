@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Read More Button for Multiple Cards (jQuery)</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+  .card {
+    max-width: 400px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .card-content {
+    padding: 20px;
+  }
+  .more-content {
+    display: none;
+  }
+  .read-more-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <div class="card-content">
+    <h2>Main Content 1</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis condimentum mauris nec lacus faucibus, nec consectetur magna auctor. Mauris tristique arcu id semper finibus. Nulla facilisi. Integer auctor felis at lacus bibendum, at elementum nunc viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras vitae ultrices nisi, sit amet tincidunt odio. Suspendisse potenti.</p>
+    <div class="more-content">
+      <p>Additional Content 1</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum dui a commodo dictum. Fusce nec lacus ut quam fermentum vestibulum. In non elit ac ante egestas malesuada id a mi. Fusce non enim vitae felis mollis vestibulum. Aliquam quis magna ipsum. Integer a lorem eget ligula fringilla bibendum. Sed ac turpis odio. Sed fringilla eros sed ultricies feugiat. Donec a eros in nisi cursus iaculis id sed dolor. Morbi ultricies lorem nec quam molestie, non congue odio fermentum. Morbi convallis sit amet sem ac varius. Nam luctus nisi ut tortor placerat, at cursus ligula finibus. Suspendisse potenti.</p>
+    </div>
+    <button class="read-more-btn">Read More</button>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-content">
+    <h2>Main Content 2</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis condimentum mauris nec lacus faucibus, nec consectetur magna auctor. Mauris tristique arcu id semper finibus. Nulla facilisi. Integer auctor felis at lacus bibendum, at elementum nunc viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras vitae ultrices nisi, sit amet tincidunt odio. Suspendisse potenti.</p>
+    <div class="more-content">
+      <p>Additional Content 2</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum dui a commodo dictum. Fusce nec lacus ut quam fermentum vestibulum. In non elit ac ante egestas malesuada id a mi. Fusce non enim vitae felis mollis vestibulum. Aliquam quis magna ipsum. Integer a lorem eget ligula fringilla bibendum. Sed ac turpis odio. Sed fringilla eros sed ultricies feugiat. Donec a eros in nisi cursus iaculis id sed dolor. Morbi ultricies lorem nec quam molestie, non congue odio fermentum. Morbi convallis sit amet sem ac varius. Nam luctus nisi ut tortor placerat, at cursus ligula finibus. Suspendisse potenti.</p>
+    </div>
+    <button class="read-more-btn">Read More</button>
+  </div>
+</div>
+
+<script>
+$(document).ready(function() {
+  $(".read-more-btn").click(function() {
+    var moreContent = $(this).prev(".more-content");
+    $(moreContent).toggle();
+    if ($(moreContent).is(":visible")) {
+      $(this).text("Read Less");
+    } else {
+      $(this).text("Read More");
+    }
+  });
+});
+</script>
+
+</body>
+</html>

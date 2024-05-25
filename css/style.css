@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+
+}
+ul{
+    list-style: none;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+}
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+.top{
+    background: #217DBB;
+}
+.dateandtime{
+    color: white;
+}
+.btn.bg:hover{
+    background: rgb(38, 219, 38);
+    color: white;
+
+}
+.logo{
+    height: 80px;
+    width: 250px;
+}
+.dropdown-item:hover{
+    background: rgb(38, 219, 38);
+    color: white;
+
+}
+.drs.w-100{
+    height: 140px;
+    width: 140px;
+}
+
+
+.serviceslogo{
+    height: 80px;
+    width: 80px;
+    background: rgb(46, 192, 46);
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    
+    
+}
+.card-body p{
+    height: 100px;
+    overflow: hidden;
+}
+.card-body .showContent a{
+    height: auto;
+}
+.services1{
+    height: 100px;
+    overflow: hidden;
+}
+.notice1{
+    color: black;
+}
+.notice1:hover{
+    color: #217DBB;
+}
+.footer{
+    height: 350px;
+    width: auto;
+    background: rgb(41, 34, 34);
+}
+.sicon :hover{
+    color: wheat;
+    
+
+}
+
+
+
+  .animation {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .animation:hover {
+    transform: scale(1.05);
+  }
+
+
+  
+
+
+  .card {
+    max-width: 400px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .card-content {
+    padding: 20px;
+  }
+  .more-content {
+    display: none;
+  }
+  .read-more-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
